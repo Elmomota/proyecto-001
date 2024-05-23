@@ -1,4 +1,4 @@
-import { getZapatillas } from "./Peticiones/getZapatillas";
+import { getZapatillas } from "./Peticiones/getZapatillas.js";
 
 const enviarDatos = (id, nombre, descripcion, precio, foto, disponible) => {
     const rutaArchivoHTML = "../zapatillas.html";
@@ -31,7 +31,7 @@ const enviarDatos = (id, nombre, descripcion, precio, foto, disponible) => {
         .catch((error) => console.error(`Error al cargar el archivo HTML: ${error}`));
 }
 
-const crearCard = (results = []) => {
+const crearCards = (results = []) => {
     let zapatillasRow = document.getElementById("zapatillasRow");
 
     results.forEach((result) => {
@@ -91,5 +91,5 @@ const crearCard = (results = []) => {
 }
 
 getZapatillas()
-    .then(data => crearCard(data))
-    .catch(error => console.log(`El error es: ${error}`));
+    .then(data => crearCards(data))
+    .catch(error => console.error(`Error al obtener los datos de las zapatillas: ${error}`));

@@ -2,7 +2,7 @@ export const getPersonajes = async() => {
 
     try{
 
-        const response = await fetch("https://localhost/api/zapatillasData");
+        const response = await fetch("https://proyecto-001.onrender.com/api/zapatillasData");
         const data =  await response.json();
 
         return data.results;
