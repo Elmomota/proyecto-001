@@ -1,4 +1,4 @@
-import { getZapatillas } from "./Peticiones/getZapatillas.js";
+const getZapatillas = require('./Peticiones/getZapatillas');
 
 const enviarDatos = (id, nombre, descripcion, precio, foto, disponible) => {
     const rutaArchivoHTML = "../zapatillas.html";
