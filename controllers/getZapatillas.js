@@ -3,12 +3,13 @@ const{zapatillas}=require("../zapatillas.js");
 
 const getZapatillas=(req=request,res=response)=>{
     return res.json({
-        zapatillas:zapatillas
+        zapatillas: zapatillas
     });
 }
-const getZapatillasById=(req=request,res=response)=>{
-    const id=req.params.id;
-    return zapatillas.find((zapatilla)=>{
+const getZapatillasById = (req = request, res = response) => {
+    const id = req.params.id;
+    let zapaS = "";
+    zapaS = zapatillas.find((zapatilla)=>{
         return zapatilla.id===id;
     })
     if (zapaS){
