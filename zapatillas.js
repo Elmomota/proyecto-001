@@ -1,4 +1,4 @@
-const zapatillasData = [
+const zapatillas = [
     {
       id: 1,
       nombre: "Zapatillas deportivas Nike Air Max",
@@ -72,3 +72,6 @@ const zapatillasData = [
       disponible: true
     }
   ];
+  module.exports = {
+    zapatillas
+}
