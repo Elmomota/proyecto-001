@@ -1,6 +1,6 @@
 const zapatillas = [
     {
-      "id": 1,
+      "id": "001",
       "nombre": "Zapatillas deportivas Nike Air Max",
       "descripcion": "Zapatillas deportivas Nike Air Max con tecnología Air para una máxima comodidad.",
       "precio": 150.00,
@@ -8,7 +8,7 @@ const zapatillas = [
       "disponible": true
     },
     {
-      "id": 2,
+      "id": "002",
       "nombre": "Zapatillas Adidas Ultraboost",
       "descripcion": "Zapatillas Adidas Ultraboost con amortiguación Boost para una excelente energía de retorno.",
       "precio": 170.00,
@@ -16,7 +16,7 @@ const zapatillas = [
       "disponible": true
     },
     {
-      "id": 3,
+      "id": "003",
       "nombre": "Zapatillas Reebok Classic",
       "descripcion": "Zapatillas Reebok Classic con estilo retro y comodidad duradera.",
       "precio": 80.00,
@@ -24,7 +24,7 @@ const zapatillas = [
       "disponible": true
     },
     {
-      "id": 4,
+      "id": "004",
       "nombre": "Zapatillas Puma RS-X",
       "descripcion": "Zapatillas Puma RS-X con diseño futurista y comodidad avanzada.",
       "precio": 120.00,
@@ -32,7 +32,7 @@ const zapatillas = [
       "disponible": true
     },
     {
-      "id": 5,
+      "id": "005",
       "nombre": "Zapatillas New Balance 574",
       "descripcion": "Zapatillas New Balance 574 con estilo clásico y comodidad superior.",
       "precio": 100.00,
@@ -40,7 +40,7 @@ const zapatillas = [
       "disponible": true
     },
     {
-      "id": 6,
+      "id": "006",
       "nombre": "Zapatillas Vans Old Skool",
       "descripcion": "Zapatillas Vans Old Skool con diseño icónico y comodidad todo el día.",
       "precio": 65.00,
@@ -48,7 +48,7 @@ const zapatillas = [
       "disponible": true
     },
     {
-      "id": 7,
+      "id": "007",
       "nombre": "Zapatillas Converse Chuck Taylor All Star",
       "descripcion": "Zapatillas Converse Chuck Taylor All Star, un clásico atemporal.",
       "precio": 55.00,
@@ -56,7 +56,7 @@ const zapatillas = [
       "disponible": true
     },
     {
-      "id": 8,
+      "id": "008",
       "nombre": "Zapatillas Under Armour HOVR Phantom",
       "descripcion": "Zapatillas Under Armour HOVR Phantom con amortiguación HOVR para una sensación de gravedad cero.",
       "precio": 140.00,
@@ -64,7 +64,7 @@ const zapatillas = [
       "disponible": true
     },
     {
-      "id": 9,
+      "id": "009",
       "nombre": "Zapatillas Asics Gel-Kayano",
       "descripcion": "Zapatillas Asics Gel-Kayano con tecnología GEL para una amortiguación superior.",
       "precio": 160.00,
