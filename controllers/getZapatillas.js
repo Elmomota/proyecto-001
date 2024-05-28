@@ -21,7 +21,7 @@ const getZapatillasById = (req = request, res = response) => {
     }else{
         return res.json({
             ok:false,
-            msg:"Error, no hay zapatillasd e este modelo",
+            msg:"Error, no hay zapatillas de este modelo",
             statuscode:404
         });
     }

@@ -1,4 +1,4 @@
-const getZapatillas = require('./Peticiones/getZapatillas');
+const getZapatilla = require('./peticiones/obZapatillas');
 
 const enviarDatos = (id, nombre, descripcion, precio, foto, disponible) => {
     const rutaArchivoHTML = "../zapatillas.html";
@@ -90,6 +90,6 @@ const crearCards = (results = []) => {
     });
 }
 
-getZapatillas()
+getZapatilla()
     .then(data => crearCards(data))
     .catch(error => console.error(`Error al obtener los datos de las zapatillas: ${error}`));
