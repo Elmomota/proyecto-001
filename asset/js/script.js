@@ -1,10 +1,15 @@
-const getZapatilla = require('./peticiones/obZapatillas');
+import { getZapatillas } from "./peticiones/obZapatillas.js";
 
 const enviarDatos = (id, nombre, descripcion, precio, foto, disponible) => {
     const rutaArchivoHTML = "../zapatillas.html";
 
     fetch(rutaArchivoHTML)
-        .then((response) => response.text())
+        .then((response) => {
+            if (!response.ok) {
+                throw new Error("No se pudo cargar el archivo HTML");
+            }
+            return response.text();
+        })
         .then((html) => {
             const parser = new DOMParser();
             const doc = parser.parseFromString(html, "text/html");
@@ -90,6 +95,7 @@ const crearCards = (results = []) => {
     });
 }
 
-getZapatilla()
+getZapatillas()
     .then(data => crearCards(data))
     .catch(error => console.error(`Error al obtener los datos de las zapatillas: ${error}`));
+
