@@ -98,4 +98,3 @@ const crearCards = (results = []) => {
 getZapatillas()
     .then(data => crearCards(data))
     .catch(error => console.error(`Error al obtener los datos de las zapatillas: ${error}`));
-

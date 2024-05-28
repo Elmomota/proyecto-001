@@ -5,7 +5,9 @@ export const getZapatillas = async() => {
         
         
         const data = await response.json();
+   
         return data.results;
+   
 
     }catch(error){
         console.log(`El error es: ${error}`);
